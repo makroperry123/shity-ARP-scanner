@@ -39,14 +39,3 @@ def ARP_Scan(ips):
 if __name__ == "__main__":
     ARP_Scan(sys.argv[1])   
 
-#%%
-from win_nic import NetworkAdapters
-
-
-this_pc_nics = NetworkAdapters()
-ethernet_nic = this_pc_nics.get_nic(index = 10)
-
-print(ethernet_nic)
-
-
-
